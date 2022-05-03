@@ -2,26 +2,35 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="imagetoolbar" content="no">
+		<!-- <meta http-equiv="imagetoolbar" content="no"> -->
 		<title>Резюме HTML-верстальщик</title>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 		<style>
 			body {
 				font-family: 'Open Sans', sans-serif;
 				background-color: #aaa;
+				box-sizing: border-box;
 			}
 
 			main {
-				max-width: 840px;
+				max-width: 800px;
 				min-width: 400px;
 				margin: 0 auto;
-				padding: 20px 30px;
+				padding: 20px 60px;
 				background-color: #fff;
 			}
 			
 			h1 {text-align: center;}
 			
 			.contacts-wrapper {float: left;}
+
+			h2 {
+				border-bottom: 1px solid gray;
+			}
+
+			.name h2, .contacts-wrapper h2 {
+				border: none;
+			}
 
 			span {
 				font-size: 1rem;
@@ -95,7 +104,7 @@
 			
 			<section class="position">
 				<h2>Должность:</h2>
-				<h3>HTML-верстальщик (стажер, junior)</h3>
+				<h3>HTML-верстальщик (стажер, junior), Контент-менеджер</h3>
 				<p>(удаленно: свободный график, частичная занятость)</p>
 				<p class="salary">от 25 000 ₽</p>
 			</section>
@@ -112,13 +121,13 @@
 			
 			<section class="education">
 				<h2>Образование:</h2>
-				<p><b>Высшее экономическое</b> (2000 - 2004гг., Марийский государственный технический университет, Экономический факультет, Специальность «Финансы и кредит».)</p>
+				<p><b>Высшее экономическое</b> (<i>2000 - 2004гг.,</i> Марийский государственный технический университет, Экономический факультет, Специальность «Финансы и кредит».)</p>
 				<p><b>Интерактивные онлайн-курсы в htmlacademy.ru</b> (<a href="https://htmlacademy.ru/profile/avk-ru" target="_blank">профиль</a>)</p>
 			</section>
 			
 			<section class="experience">
 				<h2>Опыт работы:</h2>
-				<p>Период работы: февраль 2019 по декабрь 2019.</p>
+				<p>Период работы: <i>февраль 2019 — декабрь 2019.</i></p>
 				<p>Компания: <b>ООО "АНКОР Кадровые решения"</b> (аутсорс).</p>
 				<p>Должность: Асессор группы обработки данных в Яндексе.</p>
 				<p>Должностные обязанности:</p>
@@ -130,6 +139,7 @@
 				</ul>
 			</section>
 		</main>
+		
 		<script>
 			(function () {
 					"use strict";
