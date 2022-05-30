@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- <meta http-equiv="imagetoolbar" content="no"> -->
 		<title>Резюме HTML-верстальщик</title>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 
 			main {
 				max-width: 800px;
-				min-width: 400px;
+				min-width: 300px;
 				margin: 0 auto;
 				padding: 20px 60px;
 				background-color: #fff;
@@ -42,6 +43,7 @@
 				width: 200px;
 				height: 200px;
 				margin-right: 10%;
+				margin-top: 2%;
 				
 				border-radius: 50%;
 				box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 3px 10px rgb(0, 0, 0, 0.5);
@@ -65,17 +67,45 @@
 				font-weight: 600;
 			}
 			
-			@media screen and (max-width: 700px) {
+			@media screen and (max-width: 860px) {
 				.photo {
-					width: 160px;
-					height: 160px;
-					margin-right: 0;
 					margin-top: 5%;
+					margin-right: 5%;
+					transform: scale(0.85);
 				}
 			}
 
-			@media screen and (max-width: 640px) {
-				.photo {display: none;}
+			@media screen and (max-width: 820px) {
+				.photo {
+					transform: scale(0.79);
+				}
+			}
+
+			@media screen and (max-width: 780px) { 
+				.photo {margin-right: 3%;}
+			}
+			
+			@media screen and (max-width: 740px) {
+				.contacts-wrapper {float: none;}
+
+				.photo {
+					display: none;
+				}
+
+				.contacts-wrapper h2 {
+					border-bottom: 1px solid gray;
+				}
+
+			}
+			
+			@media screen and (min-width: 300px) and (max-width: 500px) {
+				body {margin: 0;}
+				
+				main {
+					padding: 20px 30px;
+				}
+			
+				span {display: none;}
 			}
 		</style>
 	</head>
