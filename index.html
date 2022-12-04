@@ -54,9 +54,10 @@
 				<p><b>Высшее экономическое</b> (<i>2000 — 2004гг.,</i> Марийский государственный технический университет, Экономический факультет, Специальность «Финансы и кредит».)</p>
 				<p><b>Интерактивные онлайн-курсы в htmlacademy.ru</b> (<a href="https://htmlacademy.ru/profile/avk-ru" target="_blank">профиль</a>)</p>
 				<p><b>Электронные сертификаты:</b>
-					<img class="сert locked" src="img/html_css.png" alt="Сертификат HTML и CSS">
-					<img class="сert locked" src="img/js_1.png" alt="Сертификат JavaScript I">
-					<img class="сert locked" src="img/js_2.png" alt="Сертификат JavaScript II">
+					<img class="cert locked" src="img/html_css.png" alt="Сертификат HTML и CSS">
+					<img class="cert locked" src="img/js_1.png" alt="Сертификат JavaScript I">
+					<img class="cert locked" src="img/js_2.png" alt="Сертификат JavaScript II">
+					<img class="cert locked" src="img/git.png" alt="Сертификат Интсрументы DevOps: Git">
 				</p>
 			</section>
 			
@@ -79,33 +80,33 @@
 			(function () {
 					"use strict";
 
-					var el = document.createElement('div');
+					let el = document.createElement('div');
 					el.style.cssText = 'pointer-events:auto';
 
 					if (el.style.pointerEvents !== 'auto') {
 							el = null;
 
-							var _lock = function (evt) {
-									evt = evt || window.event;
-									var el = evt.target || evt.srcElement;
-									if (el && /\slocked\s/.test(' ' + el.className + ' ')) {
-											if (evt.stopPropagation) {
-													evt.preventDefault();
-													evt.stopPropagation();
-											} else {
-													evt.returnValue = true;
-													evt.cancelBubble = true;
-											}
-									}
-							};
+						let _lock = function (evt) {
+								evt = evt || window.event;
+								let el = evt.target || evt.srcElement;
+								if (el && /\slocked\s/.test(' ' + el.className + ' ')) {
+										if (evt.stopPropagation) {
+												evt.preventDefault();
+												evt.stopPropagation();
+										} else {
+												evt.returnValue = true;
+												evt.cancelBubble = true;
+										}
+								}
+						};
 
-							if (document.addEventListener) {
-									document.addEventListener('mousedown', _lock, false);
-									document.addEventListener('contextmenu', _lock, false);
-							} else {
-									document.attachEvent('onmousedown', _lock);
-									document.attachEvent('oncontextmenu', _lock);
-							}
+						if (document.addEventListener) {
+								document.addEventListener('mousedown', _lock, false);
+								document.addEventListener('contextmenu', _lock, false);
+						} else {
+								document.attachEvent('onmousedown', _lock);
+								document.attachEvent('oncontextmenu', _lock);
+						}
 					}
 			})();
 		</script>
