@@ -11,7 +11,7 @@ body {
 }
 
 body::before {
-  content: "";
+  content: '';
 
   position: fixed;
   top: 0;
@@ -35,7 +35,9 @@ main {
   background-color: #fff;
 }
 
-h1 {text-align: center;}
+h1 {
+  text-align: center;
+}
 
 h2 {
   border-bottom: 1px solid gray;
@@ -59,7 +61,7 @@ span {
   width: 200px;
   height: 200px;
   margin: auto;
-  
+
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 3px 10px rgb(0, 0, 0, 0.5);
 }
@@ -85,6 +87,11 @@ span {
   font-weight: 600;
 }
 
+.salary span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .certs li,
 .skills__list li,
 .experience__list li {
@@ -100,23 +107,28 @@ span {
   text-shadow: 0 0 0 #000;
 }
 
-
 @media screen and (max-width: 800px) {
   .photo {
     transform: scale(0.8);
   }
-  
+
   .salary {
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 700px) {
-  main {padding: 20px 30px;}
-  
-  .photo {display: none;}
+  main {
+    padding: 20px 30px;
+  }
 
-  .contacts__wrapper {width: 100%;}
+  .photo {
+    display: none;
+  }
+
+  .contacts__wrapper {
+    width: 100%;
+  }
 
   .contacts__wrapper h2 {
     border-bottom: 1px solid gray;
@@ -129,9 +141,13 @@ span {
 }
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
-  body {margin: 0;}
+  body {
+    margin: 0;
+  }
 
-  span {display: none;}
+  span {
+    display: none;
+  }
 
   .certs {
     padding-left: 30px;
